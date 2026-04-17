@@ -1,4 +1,4 @@
-# P2.1.1- Endloses Würfeln
+# P2.1.1 Endloses Würfeln
 
 ## Aufgabe
 Schätzung: 3 SP
@@ -48,3 +48,9 @@ damit ich das Spiel lange spielen kann.
 - While Schleife ist aktuell noch unendlich - ggf eine SPielanzahlsbegrenzung einbauen
 - Anzeige ist aktuell eine Zahl von 1-6. Kann man Würfel darstellen?
 - Wann stoppe ich die while Schleife? --> Nach jedem Spiel wird nach dem Ende gefragt
+
+- Wenn wir eine vorgebene Anzahl von Spielen haben wollen, wollen wir dann einfach mehrere Funktionen erstellen?
+    - def auswertung
+    - def x-mal_spielen
+    - def interaktiv_spielen
+    - def main_function
