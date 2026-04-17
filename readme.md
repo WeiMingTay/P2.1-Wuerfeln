@@ -39,9 +39,12 @@ damit ich das Spiel lange spielen kann.
 
 - Ergebnisse sollen analysierbar sein. Heißt Ergebnisse müssen zwischengespeichert sein.
 - Jeweilige Ergebnisse müssen zählbar sein für die Auswertung (Gleichverteilung)
+- Wieviel Spiele sollen gespielt werden?
 
 - Nach einem Wurf soll das Ergebnis angezeigt werden (als Zahl? Als Würfel?)
 - Abfrage, ob ich nochmal würfeln mag. input --> Enter? oder Yes?
 
-####
+#### Offen und aktuelle Herausforderungen - 20260417
 - While Schleife ist aktuell noch unendlich - ggf eine SPielanzahlsbegrenzung einbauen
+- Anzeige ist aktuell eine Zahl von 1-6. Kann man Würfel darstellen?
+- Wann stoppe ich die while Schleife? --> Nach jedem Spiel wird nach dem Ende gefragt
