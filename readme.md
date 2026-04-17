@@ -42,3 +42,6 @@ damit ich das Spiel lange spielen kann.
 
 - Nach einem Wurf soll das Ergebnis angezeigt werden (als Zahl? Als Würfel?)
 - Abfrage, ob ich nochmal würfeln mag. input --> Enter? oder Yes?
+
+####
+- While Schleife ist aktuell noch unendlich - ggf eine SPielanzahlsbegrenzung einbauen
