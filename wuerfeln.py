@@ -4,7 +4,7 @@ import random
 # Spiel starten. Erstellen einer Funktion
 
 def wuerfel_spiel():
-    print("🎲 Moin Moin und viel Spaß beim legalen Glücksspiel 🎲")
+    print("\033[32m🎲 Moin Moin und viel Spaß beim legalen Glücksspiel 🎲\033[0m")
     
     # Zwischenspeichr der Ergebnisse und Zählen der Würfe
     # Wahl fiel aus set, weil die Reihenfolge egal ist
@@ -42,6 +42,19 @@ def wuerfel_spiel():
         
         if weiterspielen == 'n':
             break
+    
+    print("\n\033[32m📊--- Spiel beendet ---📊\033[0m")
+    print("\033[31mHier zur Auswertung:\033[0m")
+    print(f"Du hast ingesamt {wuerfe_gesamt} mal gewürfelt.")
+    
+    # ANzeige des Inhalts des Dictionaries mit for Schleife
+    for zahl, anzahl in statistik.items():
+        # ternary operator - kurzschreibweise für eine if else
+        prozent = (anzahl / wuerfe_gesamt * 100) if wuerfe_gesamt > 0 else 0
+        # :2d rückt die Anzahl anzeige ein wenig ein - rein kosmetisch =) :02d würde zB eine führende 0 einfügen
+        # :.2f Möglich durch d-String: .2 macht immer zwei Nachkommastellen, f ist ein float
+        print(f"Zahl {zahl}: {anzahl:2d} mal gewürfelt ({prozent:.2f}%)")
+        
 
 
 if __name__ == "__main__":
