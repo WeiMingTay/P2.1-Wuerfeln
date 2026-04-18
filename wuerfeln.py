@@ -55,7 +55,7 @@ def wuerfel_spiel():
         # :.2f Möglich durch d-String: .2 macht immer zwei Nachkommastellen, f ist ein float
         print(f"Zahl {zahl}: {anzahl:2d} mal gewürfelt ({prozent:.2f}%)")
        
-    nochmal = input("\nWillst du nochmal spielen? \nDann dann drück \033[41m'j'\033[0m.\nSonst drücke eine beliebige Taste!")
+    nochmal = input("\nWillst du nochmal spielen? \nDann drück '\033[44mj\033[0m'.\nSonst drücke eine beliebige Taste!\n")
     if nochmal == "j":
         wuerfel_spiel()
 
