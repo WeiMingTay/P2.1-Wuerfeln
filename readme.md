@@ -54,3 +54,4 @@ damit ich das Spiel lange spielen kann.
     - def x-mal_spielen
     - def interaktiv_spielen
     - def main_function
+- Wurzeln mit retro Consolen anischt oder symbol einbauen

@@ -19,6 +19,9 @@ def wuerfel_spiel():
     # 0 = Int
     wuerfe_gesamt = 0
 
+    wuerfel_symbole = {
+    1: "⚀", 2: "⚁", 3: "⚂", 4: "⚃", 5: "⚄", 6: "⚅"
+}
 
 # Wurf auslösen
     # Schleife zum Spielen. Hier wird optional noch eine begrenzung eingebaut (x Spiele oder Endlos)
@@ -49,11 +52,12 @@ def wuerfel_spiel():
     
     # ANzeige des Inhalts des Dictionaries mit for Schleife
     for zahl, anzahl in statistik.items():
+        symbol = wuerfel_symbole[zahl]
         # ternary operator - kurzschreibweise für eine if else
         prozent = (anzahl / wuerfe_gesamt * 100) if wuerfe_gesamt > 0 else 0
         # :2d rückt die Anzahl anzeige ein wenig ein - rein kosmetisch =) :02d würde zB eine führende 0 einfügen
         # :.2f Möglich durch d-String: .2 macht immer zwei Nachkommastellen, f ist ein float
-        print(f"Zahl {zahl}: {anzahl:2d} mal gewürfelt ({prozent:.2f}%)")
+        print(f"Zahl \033[1;30;47m {symbol} \033[0m: {anzahl:2d} mal gewürfelt ({prozent:.2f}%)")
        
     nochmal = input("\nWillst du nochmal spielen? \nDann drück '\033[44mj\033[0m'.\nSonst drücke eine beliebige Taste!\n")
     if nochmal == "j":
