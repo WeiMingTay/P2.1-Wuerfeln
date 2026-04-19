@@ -4,7 +4,7 @@ import random
 # Spiel starten. Erstellen einer Funktion
 
 def wuerfel_spiel():
-    print("\n\033[32m🎲 Moin Moin und viel Spaß beim legalen Glücksspiel 🎲\033[0m")
+    print("\n\033[1;32m🎲 Moin Moin und viel Spaß beim legalen Glücksspiel 🎲\033[0m")
     
     # Zwischenspeichr der Ergebnisse und Zählen der Würfe
     # Wahl fiel aus set, weil die Reihenfolge egal ist
@@ -26,7 +26,7 @@ def wuerfel_spiel():
 # Wurf auslösen
     # Schleife zum Spielen. Hier wird optional noch eine begrenzung eingebaut (x Spiele oder Endlos)
     while True:
-        print("\n--- Neuer Wurf ---")
+        print("\n--- \033[4mNeuer Wurf\033[0m ---")
     
         # nur Integers von 1-6 
         ergebnis = random.randint(1,6)
@@ -42,11 +42,13 @@ def wuerfel_spiel():
             print(statistik[i+1])
         """
         weiterspielen = input("Möchtest Du noch einmal würfeln? (j/n) oder Enter für ja: ")
+
         
         if weiterspielen == 'n':
             break
-    
-    print("\n\033[32m📊--- Spiel beendet ---📊\033[0m")
+        
+      
+    print("\n\033[32m📊 --- \033[4mSpiel beendet\033[0m --- 📊\033[0m")
     print("\033[31mHier zur Auswertung:\033[0m")
     print(f"Du hast ingesamt \033[31m{wuerfe_gesamt}\033[0m mal gewürfelt.")
     
